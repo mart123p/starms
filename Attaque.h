@@ -10,7 +10,8 @@ public:
     Attaque();
     /* Constructeur avec le nom de l'attaque, le nombre dégats, le couts en force, pourcentage de réussite pour l'attaque*/
     Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageReussite);
-
+    /* Destructeur */
+    ~Attaque();
     /*
      * Entrée: Aucune
      * Sortie: Dit si l'attaque à réussi ou non (avec le pourcentage de réussite)
@@ -37,7 +38,7 @@ public:
      * Sortie: Sort un vecteur de tous les attaques
      * Rôle: Sera utile pour le choix des attaques
      */
-    std::string getNoM();
+    std::string getNom();
 
 private:
     int m_degats;
