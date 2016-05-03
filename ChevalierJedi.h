@@ -15,7 +15,9 @@ public:
     ChevalierJedi();
     ~ChevalierJedi();
     Attaque attaqueProjection(Personnage &cible);
-private:
+    Attaque attaqueGuerison(Personnage &cible);
+    Attaque attaqueSabreLaser(Personnage &cible);
+    virtual std::vector <std::string> getAttaques();
 
 };
 
