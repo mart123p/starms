@@ -17,7 +17,7 @@ Attaque::~Attaque() {
 
 }
 bool Attaque::successfullAttaque() {
-    std::srand(std::time(0));
+    std::srand((unsigned int) std::time(0));
     int randomVar((std::rand()%100)+1);
     return randomVar <= m_pourcentageReussite;
 }
