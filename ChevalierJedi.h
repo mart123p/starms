@@ -7,11 +7,17 @@
 
 
 #include "Personnage.h"
+#include "Attaque.h"
 
 class ChevalierJedi : public Personnage {
+public:
     ChevalierJedi(std::string);
     ChevalierJedi();
     ~ChevalierJedi();
+    Attaque attaqueProjection(Personnage &cible);
+    Attaque attaqueGuerison(Personnage &cible);
+    Attaque attaqueSabreLaser(Personnage &cible);
+    virtual std::vector <std::string> getAttaques();
 
 };
 
