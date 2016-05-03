@@ -13,10 +13,10 @@ class Personnage {
 public:
     Personnage(std::string nom);
     ~Personnage();
-    std::vector <std::string> getAttaques();
+    virtual std::vector <std::string> getAttaques();
     static int lancerDe(int nbDe, int nbFace);
     void recevoirDegats(int degats);
-    void attaquer(Personnage &cible);
+    virtual void attaquer(Personnage &cible, int degats);
 
     int getVie();
     int getVieMax();
