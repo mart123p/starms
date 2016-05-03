@@ -3,5 +3,5 @@ project(starms)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Personnage.cpp Personnage.h)
+set(SOURCE_FILES main.cpp Personnage.cpp Personnage.h ChevalierJedi.cpp ChevalierJedi.h)
 add_executable(starms ${SOURCE_FILES})

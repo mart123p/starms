@@ -15,6 +15,7 @@ public:
     Personnage(std::string nom);
     /* Destructeur */
     ~Personnage();
+    Personnage();
     /*
      * Entrée:
      * Sortie:
