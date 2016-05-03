@@ -11,8 +11,15 @@
 #include <vector>
 class Personnage {
 public:
+    /* Constructeur */
     Personnage(std::string nom);
+    /* Destructeur */
     ~Personnage();
+    /*
+     * Entrée:
+     * Sortie:
+     * Rôle:
+     */
     virtual std::vector <std::string> getAttaques();
     static int lancerDe(int nbDe, int nbFace);
     void recevoirDegats(int degats);
