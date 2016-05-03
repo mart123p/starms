@@ -1,7 +1,3 @@
-//
-// Created by Martin Pouliot on 2016-05-03.
-//
-
 #ifndef STARMS_SORCIERSITH_H
 #define STARMS_SORCIERSITH_H
 
@@ -11,11 +7,32 @@
 
 class SorcierSith : public Personnage {
 public:
+    /* Constructeur */
     SorcierSith();
+    /* Constructeur avec nom*/
     SorcierSith(std::string nom);
+    /* Destructeur */
     ~SorcierSith();
+
+    /*
+     * Entrée: Personnage que nous voulons attaquer
+     * Sortie: Retourne l'objet attaque qui contient tous l'information nécessaire
+     * Rôle: Permet au personnage passé en argument de reçevoir des dégats, s'occupe aussi du coût de la force
+     */
     Attaque attaqueDechargeElectrique(Personnage &cible);
+
+    /*
+     * Entrée: Personnage que nous voulons attaquer
+     * Sortie: Retourne l'objet attaque qui contient tous l'information nécessaire
+     * Rôle: Permet au personnage passé en argument de reçevoir des dégats, s'occupe aussi du coût de la force
+     */
     Attaque attaqueCouteauLaser(Personnage &cible);
+
+    /*
+     * Entrée: Aucune
+     * Sortie: Sort un vecteur de tous les attaques
+     * Rôle: Sera utile pour le choix des attaques
+     */
     virtual std::vector <std::string> getAttaques();
 };
 
