@@ -12,6 +12,7 @@
 class Personnage {
 public:
     Personnage(std::string nom);
+    Personnage();
     ~Personnage();
     virtual std::vector <std::string> getAttaques();
     static int lancerDe(int nbDe, int nbFace);
