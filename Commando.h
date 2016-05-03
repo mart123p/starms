@@ -1,7 +1,3 @@
-//
-// Created by Martin Pouliot on 2016-05-03.
-//
-
 #ifndef STARMS_COMMANDO_H
 #define STARMS_COMMANDO_H
 

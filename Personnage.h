@@ -1,7 +1,3 @@
-//
-// Created by Martin Pouliot on 2016-05-03.
-//
-
 #ifndef STARMS_PERSONNAGE_H
 #define STARMS_PERSONNAGE_H
 

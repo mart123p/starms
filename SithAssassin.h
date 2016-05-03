@@ -1,7 +1,3 @@
-//
-// Created by Martin Pouliot on 2016-05-03.
-//
-
 #ifndef STARMS_SITHASSASSIN_H
 #define STARMS_SITHASSASSIN_H
 
