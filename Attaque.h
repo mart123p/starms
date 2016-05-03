@@ -1,7 +1,3 @@
-//
-// Created by Martin Pouliot on 2016-05-03.
-//
-
 #ifndef STARMS_ATTAQUE_H
 #define STARMS_ATTAQUE_H
 
@@ -34,9 +30,9 @@ public:
     int getCoutsDeForce();
     /*
      * Entrée: Aucune
-     * Sortie: Retourne le nom de l'attaque en question
-     * Rôle: Permet de connaitre le nom du personnage en question
-    */
+     * Sortie: Sort un vecteur de tous les attaques
+     * Rôle: Sera utile pour le choix des attaques
+     */
     std::string getNoM();
 
 private:
