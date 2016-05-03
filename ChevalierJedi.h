@@ -11,7 +11,7 @@
 
 class ChevalierJedi : public Personnage {
 public:
-    ChevalierJedi(std::string);
+    ChevalierJedi(std::string nom);
     ChevalierJedi();
     ~ChevalierJedi();
     Attaque attaqueProjection(Personnage &cible);
