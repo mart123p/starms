@@ -24,12 +24,22 @@ public:
      */
     virtual std::vector <std::string> getAttaques();
     /*
-     * Entrée: Aucune
-     * Sortie: Sort un vecteur de tous les attaques
-     * Rôle: Sera utile pour le choix des attaques
+     * Entrée: Le nombre de dés à lancer ainsi que le nombre de faces par dé
+     * Sortie: Retourne la valeur des dés additionés.
+     * Rôle: Cette fonction est uttilisé pour tous les attaques et les caractérisqtiques de tous les personnages
      */
     static int lancerDe(int nbDe, int nbFace);
+    /*
+     * Entrée: Le nombre de dégats à reçevoir de l'opposant
+     * Sortie: Aucune
+     * Rôle: Permet à chaque personnage de reçevoir des dégats
+    */
     void recevoirDegats(int degats);
+    /*
+     * Entrée:
+     * Sortie:
+     * Rôle:
+    */
     virtual void attaquer(Personnage &cible, int degats);
 
     int getVie();
