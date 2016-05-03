@@ -13,6 +13,9 @@ public:
     Attaque();
     Attaque(std::string nom, int degats, int coupsDeForce, int pourcentageReussite);
     bool successfullAttaque();
+    int getDegats();
+    int getCoupsDeForce();
+    std::string getNoM();
 
 private:
     int m_degats;
