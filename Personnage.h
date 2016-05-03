@@ -11,17 +11,23 @@
 #include <vector>
 class Personnage {
 public:
-    /* Constructeur */
+    /* Constructeur avec nom */
     Personnage(std::string nom);
+    /* Constructeur sans nom */
+    Personnage();
     /* Destructeur */
     ~Personnage();
-    Personnage();
     /*
-     * Entrée:
-     * Sortie:
-     * Rôle:
+     * Entrée: Aucune
+     * Sortie: Sort un vecteur de tous les attaques
+     * Rôle: Sera utile pour le choix des attaques
      */
     virtual std::vector <std::string> getAttaques();
+    /*
+     * Entrée: Aucune
+     * Sortie: Sort un vecteur de tous les attaques
+     * Rôle: Sera utile pour le choix des attaques
+     */
     static int lancerDe(int nbDe, int nbFace);
     void recevoirDegats(int degats);
     virtual void attaquer(Personnage &cible, int degats);
