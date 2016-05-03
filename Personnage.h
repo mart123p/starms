@@ -36,16 +36,40 @@ public:
     */
     void recevoirDegats(int degats);
     /*
-     * Entrée:
-     * Sortie:
-     * Rôle:
+     * Entrée: Le personnage à attaquer ainsi que le nombre de dégats à lui envoyer
+     * Sortie: Aucune
+     * Rôle: Permet d'attaquer un personnage ciblé (son adversaire)
     */
     virtual void attaquer(Personnage &cible, int degats);
-
+    /*
+     * Entrée: Aucune
+     * Sortie: Le nombre de vie du personnage
+     * Rôle: Retourne le nombre de vie restante
+    */
     int getVie();
+    /*
+     * Entrée: Aucune
+     * Sortie: Le nombre de vie de départ du personnage
+     * Rôle: Retourne le nombre de vie que le personnage avait au départ
+    */
     int getVieMax();
+    /*
+     * Entrée: Aucune
+     * Sortie: Le nombre de force du personnage
+     * Rôle: Retourne le nombre de force du personnage
+    */
     int getForce();
+    /*
+     * Entrée: Aucune
+     * Sortie: Le nombre de force de départ du personnage
+     * Rôle: Retourne le nombre de force que le personnage avait au départ
+    */
     int getForceMax();
+    /*
+     * Entrée: Aucune
+     * Sortie: Le nom du personnage
+     * Rôle: Retourne le nom du personnage présent
+    */
     std::string getNom();
 
 protected:
