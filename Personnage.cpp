@@ -17,7 +17,6 @@ std::vector <std::string> Personnage::getAttaques() {
 
 }
 int Personnage::lancerDe(int nbDe, int nbFace) {
-    std::srand((unsigned int) std::time(0));
     int total(0);
     for(int i = 1; i <= nbDe; i++){
         total += ((std::rand()%nbFace)+1);
