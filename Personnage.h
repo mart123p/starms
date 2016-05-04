@@ -12,7 +12,7 @@ public:
     /* Constructeur sans nom */
     Personnage();
     /* Destructeur */
-    ~Personnage();
+    virtual ~Personnage();
 
     /*
      * Entrée: Aucune
