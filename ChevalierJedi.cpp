@@ -6,6 +6,11 @@ ChevalierJedi::ChevalierJedi() : Personnage() {
     m_forceMax = lancerDe(2,20);
     m_force = m_forceMax;
     m_nom = "Jean-Pierre";
+    std::vector<std::string> attaques;
+    attaques.push_back("Sort projection");
+    attaques.push_back("Sort gu\x82rison");
+    attaques.push_back("Arme sabre laser");
+    m_attaques = attaques;
 
 }
 ChevalierJedi::ChevalierJedi(std::string nom) : Personnage(nom) {
@@ -13,6 +18,11 @@ ChevalierJedi::ChevalierJedi(std::string nom) : Personnage(nom) {
     m_vie = m_vieMax;
     m_forceMax = lancerDe(2,20);
     m_force = m_forceMax;
+    std::vector<std::string> attaques;
+    attaques.push_back("Sort projection");
+    attaques.push_back("Sort gu\x82rison");
+    attaques.push_back("Arme sabre laser");
+    m_attaques = attaques;
 
 }
 ChevalierJedi::~ChevalierJedi() {
