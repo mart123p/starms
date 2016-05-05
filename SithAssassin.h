@@ -26,13 +26,6 @@ public:
      * Rôle: Permet au personnage passé en argument de reçevoir des dégats, s'occupe aussi du coût de la force
      */
     Attaque attaqueSabreLaserDouble(Personnage &cible);
-
-    /*
-     * Entrée: Aucune
-     * Sortie: Sort un vecteur de tous les attaques
-     * Rôle: Sera utile pour le choix des attaques
-     */
-    virtual std::vector <std::string> getAttaques() const;
 };
 
 
