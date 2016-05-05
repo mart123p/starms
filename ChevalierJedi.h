@@ -19,7 +19,7 @@ public:
      *  Sortie: Objet Attaque qui contient tous les détails du sort projection
      *  Rôle: Permet au personnage passé en argument de recevoir des dégats, s'occupe aussi du coût de la force de l'attaque.
      */
-    Attaque sortProjection(Personnage &cible) const;
+    Attaque sortProjection(Personnage &cible);
 
     /*
      *  Entrée: null
@@ -33,7 +33,7 @@ public:
      *  Sortie: Objet Attaque qui contient tous les détails de l'attaque sabre laser
      *  Rôle: Permet au personnage passé en argument de recevoir des dégats, s'occupe aussi du coût de la force.
      */
-    Attaque attaqueSabreLaser(Personnage &cible) const;
+    Attaque attaqueSabreLaser(Personnage &cible);
 
     /*
      * Entrée: Aucune

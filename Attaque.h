@@ -45,6 +45,7 @@ private:
     int m_coutsDeForce;
     int m_pourcentageReussite;
     std::string m_nom;
+    bool m_succes;
 };
 
 
