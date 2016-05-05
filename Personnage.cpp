@@ -3,12 +3,17 @@
 #include <ctime>
 #include "Personnage.h"
 
-Personnage::Personnage() {
+Personnage::Personnage() :
+    m_nom("Carl"),
+    m_forceMax(0),
+    m_force(0){
     m_vieMax = lancerDe(3, 20);
     m_vie = m_vieMax;
 }
 Personnage::Personnage(std::string nom) :
-    m_nom(nom){
+    m_nom(nom),
+    m_forceMax(0),
+    m_force(0){
     m_vieMax = lancerDe(3, 20);
     m_vie = m_vieMax;
 }
