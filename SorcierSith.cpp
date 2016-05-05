@@ -15,12 +15,12 @@ SorcierSith::SorcierSith(std::string nom): Personnage(nom) {
 SorcierSith::~SorcierSith() {
 
 }
-Attaque SorcierSith::attaqueDechargeElectrique(Personnage &cible) const {
+Attaque SorcierSith::attaqueDechargeElectrique(Personnage &cible) {
 
 }
-Attaque SorcierSith::attaqueCouteauLaser(Personnage &cible) const {
+Attaque SorcierSith::attaqueCouteauLaser(Personnage &cible) {
 
 }
-std::vector <std::string> SorcierSith::getAttaques() const{
+std::vector <std::string> SorcierSith::getAttaques() {
 
 }

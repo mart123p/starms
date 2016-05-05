@@ -16,10 +16,10 @@ SithAssassin::SithAssassin(std::string nom): Personnage(nom) {
 SithAssassin::~SithAssassin() {
 
 }
-Attaque SithAssassin::attaqueAveuglement(Personnage &cible) const {
+Attaque SithAssassin::attaqueAveuglement(Personnage &cible) {
 
 }
-Attaque SithAssassin::attaqueSabreLaserDouble(Personnage &cible) const {
+Attaque SithAssassin::attaqueSabreLaserDouble(Personnage &cible) {
 
 }
 std::vector <std::string> SithAssassin::getAttaques() const {
