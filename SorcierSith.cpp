@@ -21,6 +21,3 @@ Attaque SorcierSith::attaqueDechargeElectrique(Personnage &cible) {
 Attaque SorcierSith::attaqueCouteauLaser(Personnage &cible) {
 
 }
-std::vector <std::string> SorcierSith::getAttaques() {
-
-}

@@ -22,6 +22,3 @@ Attaque SithAssassin::attaqueAveuglement(Personnage &cible) {
 Attaque SithAssassin::attaqueSabreLaserDouble(Personnage &cible) {
 
 }
-std::vector <std::string> SithAssassin::getAttaques() const {
-
-}
