@@ -19,7 +19,7 @@ public:
      * Sortie: Sort un vecteur de tous les attaques
      * Rôle: Sera utile pour le choix des attaques
      */
-    virtual std::vector <std::string> getAttaques();
+    virtual std::vector <std::string> getAttaques() const = 0;
 
     /*
      * Entrée: Le nombre de dés à lancer ainsi que le nombre de faces par dé
@@ -40,42 +40,42 @@ public:
      * Sortie: Aucune
      * Rôle: Permet d'attaquer un personnage ciblé (son adversaire)
     */
-    virtual void attaquer(Personnage &cible, int degats);
+    virtual void attaquer(Personnage &cible, int degats) const;
 
     /*
      * Entrée: Aucune
      * Sortie: Le nombre de vie du personnage
      * Rôle: Retourne le nombre de vie restante
     */
-    int getVie();
+    int getVie() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Le nombre de vie de départ du personnage
      * Rôle: Retourne le nombre de vie que le personnage avait au départ
     */
-    int getVieMax();
+    int getVieMax() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Le nombre de force du personnage
      * Rôle: Retourne le nombre de force du personnage
     */
-    int getForce();
+    int getForce() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Le nombre de force de départ du personnage
      * Rôle: Retourne le nombre de force que le personnage avait au départ
     */
-    int getForceMax();
+    int getForceMax() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Le nom du personnage
      * Rôle: Retourne le nom du personnage présent
     */
-    std::string getNom();
+    std::string getNom() const;
 
 protected:
     int m_vieMax;
