@@ -36,13 +36,6 @@ public:
     void recevoirDegats(int degats);
 
     /*
-     * Entrée: Le personnage à attaquer ainsi que le nombre de dégats à lui envoyer
-     * Sortie: Aucune
-     * Rôle: Permet d'attaquer un personnage ciblé (son adversaire)
-    */
-    virtual void attaquer(Personnage &cible, int degats) const;
-
-    /*
      * Entrée: Aucune
      * Sortie: Le nombre de vie du personnage
      * Rôle: Retourne le nombre de vie restante

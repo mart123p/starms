@@ -33,9 +33,6 @@ int Personnage::lancerDe(int nbDe, int nbFace) {
 void Personnage::recevoirDegats(int degats) {
     m_vie -= degats;
 }
-void Personnage::attaquer(Personnage &cible, int degats) const {
-    cible.recevoirDegats(degats);
-}
 int Personnage::getVie() const {
     return m_vie;
 }
