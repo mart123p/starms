@@ -13,12 +13,12 @@ Commando::Commando(std::string nom) {
 Commando::~Commando() {
 
 }
-Attaque Commando::attaqueCoupDePiedRenverse(Personnage &cible) const {
+Attaque Commando::attaqueCoupDePiedRenverse(Personnage &cible) {
 
 }
-Attaque Commando::attaqueCanonLaser(Personnage &cible) const {
+Attaque Commando::attaqueCanonLaser(Personnage &cible) {
 
 }
-std::vector <std::string> Commando::getAttaques() const {
+std::vector <std::string> Commando::getAttaques() {
 
 }
