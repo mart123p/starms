@@ -1,6 +1,6 @@
 #include "ChevalierJedi.h"
 
-ChevalierJedi::ChevalierJedi() {
+ChevalierJedi::ChevalierJedi() : Personnage() {
     m_vieMax = lancerDe(5, 20);
     m_vie = m_vieMax;
     m_forceMax = lancerDe(2,20);

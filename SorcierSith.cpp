@@ -1,5 +1,5 @@
 #include "SorcierSith.h"
-SorcierSith::SorcierSith() {
+SorcierSith::SorcierSith() : Personnage() {
     m_vieMax = lancerDe(4, 20);
     m_vie = m_vieMax;
     m_forceMax = lancerDe(4,20);

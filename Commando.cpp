@@ -1,6 +1,6 @@
 #include "Commando.h"
 
-Commando::Commando() {
+Commando::Commando() : Personnage() {
     m_vieMax = lancerDe(7, 20);
     m_vie = m_vieMax;
     m_nom = "Robert";
