@@ -5,7 +5,7 @@ Commando::Commando() : Personnage() {
     m_vie = m_vieMax;
     m_nom = "Robert";
 }
-Commando::Commando(std::string nom) {
+Commando::Commando(std::string nom): Personnage(nom) {
     m_nom = nom;
     m_vieMax = lancerDe(7, 20);
     m_vie = m_vieMax;
