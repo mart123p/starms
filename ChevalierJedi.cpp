@@ -1,9 +1,18 @@
 #include "ChevalierJedi.h"
 
 ChevalierJedi::ChevalierJedi() {
+    m_vieMax = lancerDe(5, 20);
+    m_vie = m_vieMax;
+    m_forceMax = lancerDe(2,20);
+    m_force = m_forceMax;
+    m_nom = "Jean-Pierre";
 
 }
-ChevalierJedi::ChevalierJedi(std::string nom) {
+ChevalierJedi::ChevalierJedi(std::string nom) : Personnage(nom) {
+    m_vieMax = lancerDe(5, 20);
+    m_vie = m_vieMax;
+    m_forceMax = lancerDe(2,20);
+    m_force = m_forceMax;
 
 }
 ChevalierJedi::~ChevalierJedi() {
