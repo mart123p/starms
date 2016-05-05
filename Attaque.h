@@ -17,7 +17,7 @@ public:
      * Sortie: Dit si l'attaque à réussi ou non (avec le pourcentage de réussite)
      * Rôle: Dit si l'attaque à réussi ou non
     */
-    bool successfullAttaque() const;
+    bool isSuccessfulAttaque() const;
 
     /*
      * Entrée: Aucune

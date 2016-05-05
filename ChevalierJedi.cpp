@@ -20,11 +20,9 @@ ChevalierJedi::~ChevalierJedi() {
 }
 Attaque ChevalierJedi::sortProjection(Personnage &cible) {
     Attaque attaque("Sort Projection",lancerDe(2,8),lancerDe(1,10),80);
-    if(attaque.successfullAttaque()){
+    if(attaque.isSuccessfulAttaque()){
         m_force -= attaque.getCoutsDeForce();
         cible.recevoirDegats(attaque.getDegats());
-    }else{
-
     }
 
 }

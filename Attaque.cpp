@@ -17,7 +17,7 @@ Attaque::Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageR
 Attaque::~Attaque() {
 
 }
-bool Attaque::successfullAttaque() const {
+bool Attaque::isSuccessfulAttaque() const {
     return m_succes;
 }
 int Attaque::getDegats() const {
