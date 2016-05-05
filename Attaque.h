@@ -17,28 +17,28 @@ public:
      * Sortie: Dit si l'attaque à réussi ou non (avec le pourcentage de réussite)
      * Rôle: Dit si l'attaque à réussi ou non
     */
-    bool successfullAttaque();
+    bool successfullAttaque() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Retourne le nombre de dégats
      * Rôle: retourne le nombre de dégats suite au test de réussite de l'attaque
     */
-    int getDegats();
+    int getDegats() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Retourne le cout de l'attaque en force
      * Rôle: Permet de calculer le cout de l'attaque pour que plus-tard savoir si le personnage pourra faire son attaque ou non
     */
-    int getCoutsDeForce();
+    int getCoutsDeForce() const;
 
     /*
      * Entrée: Aucune
      * Sortie: Sort un vecteur de tous les attaques
      * Rôle: Sera utile pour le choix des attaques
      */
-    std::string getNom();
+    std::string getNom() const;
 
 private:
     int m_degats;

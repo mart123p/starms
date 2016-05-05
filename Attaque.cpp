@@ -16,16 +16,16 @@ Attaque::Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageR
 Attaque::~Attaque() {
 
 }
-bool Attaque::successfullAttaque() {
+bool Attaque::successfullAttaque() const {
     int randomVar((std::rand()%100)+1);
     return randomVar <= m_pourcentageReussite;
 }
-int Attaque::getDegats() {
+int Attaque::getDegats() const {
     return m_degats;
 }
-int Attaque::getCoutsDeForce() {
+int Attaque::getCoutsDeForce() const {
     return m_coutsDeForce;
 }
-std::string Attaque::getNom() {
+std::string Attaque::getNom() const {
     return m_nom;
 }
