@@ -9,6 +9,8 @@ Personnage::Personnage() :
     m_force(0){
     m_vieMax = lancerDe(3, 20);
     m_vie = m_vieMax;
+    std::vector<std::string> attaques;
+    m_attaques = attaques;
 }
 Personnage::Personnage(std::string nom) :
     m_nom(nom),
@@ -16,6 +18,8 @@ Personnage::Personnage(std::string nom) :
     m_force(0){
     m_vieMax = lancerDe(3, 20);
     m_vie = m_vieMax;
+    std::vector<std::string> attaques;
+    m_attaques = attaques;
 }
 Personnage::~Personnage() {
 

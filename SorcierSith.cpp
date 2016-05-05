@@ -5,12 +5,18 @@ SorcierSith::SorcierSith() : Personnage() {
     m_forceMax = lancerDe(4,20);
     m_force = m_forceMax;
     m_nom = "Jocelyn";
+
+    m_attaques.push_back("Attaque D\x82charge \x82lectrique");
+    m_attaques.push_back("Arme couteau laser");
 }
 SorcierSith::SorcierSith(std::string nom): Personnage(nom) {
     m_vieMax = lancerDe(4, 20);
     m_vie = m_vieMax;
     m_forceMax = lancerDe(4,20);
     m_force = m_forceMax;
+
+    m_attaques.push_back("Attaque D\x82charge \x82lectrique");
+    m_attaques.push_back("Arme couteau laser");
 }
 SorcierSith::~SorcierSith() {
 

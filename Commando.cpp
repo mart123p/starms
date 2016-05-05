@@ -4,19 +4,18 @@ Commando::Commando() : Personnage() {
     m_vieMax = lancerDe(7, 20);
     m_vie = m_vieMax;
     m_nom = "Robert";
-    std::vector<std::string> attaques;
-    attaques.push_back("Attaque Coup de pied renvers\x82");
-    attaques.push_back("Arme Canon laser");
-    m_attaques = attaques;
+
+    m_attaques.push_back("Attaque Coup de pied renvers\x82");
+    m_attaques.push_back("Arme Canon laser");
+
 }
 Commando::Commando(std::string nom): Personnage(nom) {
     m_nom = nom;
     m_vieMax = lancerDe(7, 20);
     m_vie = m_vieMax;
-    std::vector<std::string> attaques;
-    attaques.push_back("Attaque Coup de pied renvers\x82");
-    attaques.push_back("Arme Canon laser");
-    m_attaques = attaques;
+
+    m_attaques.push_back("Attaque Coup de pied renvers\x82");
+    m_attaques.push_back("Arme Canon laser");
 }
 Commando::~Commando() {
 
