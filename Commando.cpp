@@ -14,10 +14,17 @@ Commando::~Commando() {
 
 }
 Attaque Commando::attaqueCoupDePiedRenverse(Personnage &cible) {
-
+    Attaque attaque("Coup de pied renvers\x82", lancerDe(2, 6), 0, 90);
+    if(attaque.isSuccessfulAttaque()){
+        cible.recevoirDegats(attaque.getDegats());
+    }
+    return attaque;
 }
 Attaque Commando::attaqueCanonLaser(Personnage &cible) {
-
+    Attaque attaque("Canon laser", lancerDe(4, 4), 0, 90);
+    if(attaque.isSuccessfulAttaque()){
+        cible.recevoirDegats(attaque.getDegats());
+    }
 }
 std::vector <std::string> Commando::getAttaques() {
 
