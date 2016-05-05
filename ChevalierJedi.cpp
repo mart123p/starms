@@ -24,14 +24,32 @@ Attaque ChevalierJedi::sortProjection(Personnage &cible) {
         m_force -= attaque.getCoutsDeForce();
         cible.recevoirDegats(attaque.getDegats());
     }
+    return attaque;
 
 }
 Attaque ChevalierJedi::sortGuerison() {
+    Attaque attaque("Sort Gu\x82rison",0,lancerDe(1,8),90);
+    if(attaque.isSuccessfulAttaque()){
+        m_vie =+ lancerDe(1,10);
+        if(m_vie > m_vieMax){
+            m_vie = m_vieMax;
+        }
+    }
+    return attaque;
 
 }
 Attaque ChevalierJedi::attaqueSabreLaser(Personnage &cible) {
+    Attaque attaque("Arme Sabre Laser",lancerDe(2,6),0,75);
+    if(attaque.isSuccessfulAttaque()){
+        cible.recevoirDegats(attaque.getDegats());
+    }
+    return attaque;
 
 }
 std::vector <std::string> ChevalierJedi::getAttaques() const{
-
+    std::vector<std::string> attaques;
+    attaques.push_back("Sort Projection");
+    attaques.push_back("Sort Gu\x82rison");
+    attaques.push_back("Arme Sabre Laser");
+    return attaques;
 }
