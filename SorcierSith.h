@@ -19,21 +19,21 @@ public:
      * Sortie: Retourne l'objet attaque qui contient tous l'information nécessaire
      * Rôle: Permet au personnage passé en argument de reçevoir des dégats, s'occupe aussi du coût de la force
      */
-    Attaque attaqueDechargeElectrique(Personnage &cible);
+    Attaque attaqueDechargeElectrique(Personnage &cible) const;
 
     /*
      * Entrée: Personnage que nous voulons attaquer
      * Sortie: Retourne l'objet attaque qui contient tous l'information nécessaire
      * Rôle: Permet au personnage passé en argument de reçevoir des dégats, s'occupe aussi du coût de la force
      */
-    Attaque attaqueCouteauLaser(Personnage &cible);
+    Attaque attaqueCouteauLaser(Personnage &cible) const;
 
     /*
      * Entrée: Aucune
      * Sortie: Sort un vecteur de tous les attaques
      * Rôle: Sera utile pour le choix des attaques
      */
-    virtual std::vector <std::string> getAttaques();
+    virtual std::vector <std::string> getAttaques() const;
 };
 
 
