@@ -46,10 +46,3 @@ Attaque ChevalierJedi::attaqueSabreLaser(Personnage &cible) {
     return attaque;
 
 }
-std::vector <std::string> ChevalierJedi::getAttaques() const{
-    std::vector<std::string> attaques;
-    attaques.push_back("Sort Projection");
-    attaques.push_back("Sort Gu\x82rison");
-    attaques.push_back("Arme Sabre Laser");
-    return attaques;
-}

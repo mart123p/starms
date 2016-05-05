@@ -26,6 +26,3 @@ Attaque Commando::attaqueCanonLaser(Personnage &cible) {
         cible.recevoirDegats(attaque.getDegats());
     }
 }
-std::vector <std::string> Commando::getAttaques() {
-
-}

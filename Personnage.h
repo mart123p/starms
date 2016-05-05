@@ -12,14 +12,14 @@ public:
     /* Constructeur sans nom */
     Personnage();
     /* Destructeur */
-    virtual ~Personnage();
+    virtual ~Personnage() =0;
 
     /*
      * Entrée: Aucune
      * Sortie: Sort un vecteur de tous les attaques
      * Rôle: Sera utile pour le choix des attaques
      */
-    virtual std::vector <std::string> getAttaques() const = 0;
+    std::vector <std::string> getAttaques() const;
 
     /*
      * Entrée: Le nombre de dés à lancer ainsi que le nombre de faces par dé
@@ -76,6 +76,8 @@ protected:
     int m_vie;
     int m_force;
     std::string m_nom;
+    std::vector <std::string> m_attaques;
+
 };
 
 

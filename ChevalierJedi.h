@@ -35,13 +35,6 @@ public:
      */
     Attaque attaqueSabreLaser(Personnage &cible);
 
-    /*
-     * Entrée: Aucune
-     * Sortie: Sort un vecteur de tous les attaques
-     * Rôle: Sera utile pour le choix des attaques
-     */
-    virtual std::vector <std::string> getAttaques() const;
-
 };
 
 
