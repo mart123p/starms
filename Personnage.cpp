@@ -21,7 +21,7 @@ Personnage::~Personnage() {
 
 }
 std::vector <std::string> Personnage::getAttaques() const {
-
+    return m_attaques;
 }
 int Personnage::lancerDe(int nbDe, int nbFace) {
     int total(0);
