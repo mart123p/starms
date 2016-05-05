@@ -4,16 +4,18 @@
 #include "Personnage.h"
 
 Personnage::Personnage() {
-
+    m_vieMax = lancerDe(3, 20);
+    m_vie = m_vieMax;
 }
 Personnage::Personnage(std::string nom) :
     m_nom(nom){
-
+    m_vieMax = lancerDe(3, 20);
+    m_vie = m_vieMax;
 }
 Personnage::~Personnage() {
 
 }
-std::vector <std::string> Personnage::getAttaques() {
+std::vector <std::string> Personnage::getAttaques() const {
 
 }
 int Personnage::lancerDe(int nbDe, int nbFace) {
@@ -26,21 +28,21 @@ int Personnage::lancerDe(int nbDe, int nbFace) {
 void Personnage::recevoirDegats(int degats) {
     m_vie -= degats;
 }
-void Personnage::attaquer(Personnage &cible, int degats) {
+void Personnage::attaquer(Personnage &cible, int degats) const {
     cible.recevoirDegats(degats);
 }
-int Personnage::getVie() {
+int Personnage::getVie() const {
     return m_vie;
 }
-int Personnage::getVieMax() {
+int Personnage::getVieMax() const {
     return m_vieMax;
 }
-int Personnage::getForce() {
+int Personnage::getForce() const {
     return m_force;
 }
-int Personnage::getForceMax() {
+int Personnage::getForceMax() const {
     return m_forceMax;
 }
-std::string Personnage::getNom() {
+std::string Personnage::getNom() const{
     return m_nom;
 }
