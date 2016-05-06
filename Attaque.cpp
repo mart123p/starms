@@ -20,7 +20,12 @@ bool Attaque::isSuccessfulAttaque() const {
     return m_succes;
 }
 int Attaque::getDegats() const {
-    return m_degats;
+    if(m_succes){
+        return m_degats;
+    }else{
+        return 0;
+    }
+
 }
 int Attaque::getCoutsDeForce() const {
     return m_coutsDeForce;

@@ -13,8 +13,12 @@ int main() {
 
     ChevalierJedi bob;
     ChevalierJedi rip;
-    bob.doAttack(bob.getAttaques()[0], rip);
-
+    cout << rip.getVie() << endl;
+    Attaque attaque;
+    attaque = bob.doAttack(bob.getAttaques()[0], rip);
+    cout << rip.getVie() << endl;
+    cout << attaque.isSuccessfulAttaque() << endl;
+    cout << attaque.getDegats() << endl;
 
     return 0;
 }
