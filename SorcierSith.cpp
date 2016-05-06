@@ -35,3 +35,13 @@ Attaque SorcierSith::attaqueCouteauLaser(Personnage &cible) {
     }
     return attaque;
 }
+
+Attaque SorcierSith::doAttack(std::string attaque, Personnage &cible){
+    if(attaque  == "Attaque D\x82charge \x82lectrique"){
+        return attaqueDechargeElectrique(cible);
+    }else if(attaque == "Arme couteau laser"){
+        return attaqueDechargeElectrique(cible);
+    }else{
+        return Attaque();
+    }
+}

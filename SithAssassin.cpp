@@ -22,6 +22,21 @@ SithAssassin::SithAssassin(std::string nom): SorcierSith(nom) {
 SithAssassin::~SithAssassin() {
 
 }
+
+Attaque SithAssassin::doAttack(std::string attaque, Personnage &cible) {
+    if(attaque == "Attaque D\x82charge \x82lectrique"){
+        return attaqueDechargeElectrique(cible);
+    }else if(attaque == "Arme couteau laser"){
+        return attaqueCouteauLaser(cible);
+    }else if(attaque == "Attaque Aveuglement"){
+        return attaqueAveuglement(cible);
+    }else if(attaque == "Arme sabre laser double"){
+        return attaqueSabreLaserDouble(cible);
+    }else{
+        return Attaque();
+    }
+}
+
 Attaque SithAssassin::attaqueAveuglement(Personnage &cible) {
     Attaque attaque("Aveuglement", lancerDe(2, 6), 0, 50);
     if(attaque.isSuccessfulAttaque()){
