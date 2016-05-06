@@ -1,6 +1,5 @@
 #include <cstdlib>
 #include <iostream>
-#include <ctime>
 #include "Attaque.h"
 
 Attaque::Attaque() {
