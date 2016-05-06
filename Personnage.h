@@ -5,6 +5,8 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include "Attaque.h"
+
 class Personnage {
 public:
     /* Constructeur avec nom */
@@ -12,7 +14,7 @@ public:
     /* Constructeur sans nom */
     Personnage();
     /* Destructeur */
-    virtual ~Personnage() =0;
+    virtual ~Personnage();
 
     /*
      * Entrée: Aucune
@@ -69,6 +71,13 @@ public:
      * Rôle: Retourne le nom du personnage présent
     */
     std::string getNom() const;
+
+    /*
+     * Entrée: string le nom de l'attaque, le personnage à attaquer
+     * Sortie: Retourne un objet attaque
+     * Rôle: Exécuter les méthodes attaques des childs de personnages.
+     */
+    virtual Attaque doAttack(std::string attaque, Personnage &cible) = 0;
 
 protected:
     int m_vieMax;
