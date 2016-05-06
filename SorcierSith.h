@@ -13,7 +13,7 @@ public:
     SorcierSith(std::string nom);
     /* Destructeur */
     ~SorcierSith();
-
+protected:
     /*
      * Entrée: Personnage que nous voulons attaquer
      * Sortie: Retourne l'objet attaque qui contient tous l'information nécessaire
