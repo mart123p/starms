@@ -6,7 +6,7 @@ SorcierSith::SorcierSith() : Personnage() {
     m_force = m_forceMax;
     m_nom = "Jocelyn";
 
-    m_attaques.push_back("Attaque D\x82charge \x82lectrique");
+    m_attaques.push_back("Attaque Décharge électrique");
     m_attaques.push_back("Arme couteau laser");
 }
 SorcierSith::SorcierSith(std::string nom): Personnage(nom) {
@@ -15,14 +15,14 @@ SorcierSith::SorcierSith(std::string nom): Personnage(nom) {
     m_forceMax = lancerDe(4,20);
     m_force = m_forceMax;
 
-    m_attaques.push_back("Attaque D\x82charge \x82lectrique");
+    m_attaques.push_back("Attaque Décharge électrique");
     m_attaques.push_back("Arme couteau laser");
 }
 SorcierSith::~SorcierSith() {
 
 }
 Attaque SorcierSith::attaqueDechargeElectrique(Personnage &cible) {
-    Attaque attaque("D\x82charge \x82lectrique", lancerDe(2, 20), lancerDe(1, 20), 75);
+    Attaque attaque("Décharge électrique", lancerDe(2, 20), lancerDe(1, 20), 75);
     if(attaque.isSuccessfulAttaque()){
         cible.recevoirDegats(attaque.getDegats());
     }
@@ -37,7 +37,7 @@ Attaque SorcierSith::attaqueCouteauLaser(Personnage &cible) {
 }
 
 Attaque SorcierSith::doAttack(std::string attaque, Personnage &cible){
-    if(attaque  == "Attaque D\x82charge \x82lectrique"){
+    if(attaque  == "Attaque Décharge électrique"){
         return attaqueDechargeElectrique(cible);
     }else if(attaque == "Arme couteau laser"){
         return attaqueDechargeElectrique(cible);

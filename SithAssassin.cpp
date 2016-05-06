@@ -24,7 +24,7 @@ SithAssassin::~SithAssassin() {
 }
 
 Attaque SithAssassin::doAttack(std::string attaque, Personnage &cible) {
-    if(attaque == "Attaque D\x82charge \x82lectrique"){
+    if(attaque == "Attaque Décharge électrique"){
         return attaqueDechargeElectrique(cible);
     }else if(attaque == "Arme couteau laser"){
         return attaqueCouteauLaser(cible);

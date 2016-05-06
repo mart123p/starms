@@ -5,7 +5,7 @@ Commando::Commando() : Personnage() {
     m_vie = m_vieMax;
     m_nom = "Robert";
 
-    m_attaques.push_back("Attaque Coup de pied renvers\x82");
+    m_attaques.push_back("Attaque Coup de pied renversé");
     m_attaques.push_back("Arme Canon laser");
 
 }
@@ -14,14 +14,14 @@ Commando::Commando(std::string nom): Personnage(nom) {
     m_vieMax = lancerDe(7, 20);
     m_vie = m_vieMax;
 
-    m_attaques.push_back("Attaque Coup de pied renvers\x82");
+    m_attaques.push_back("Attaque Coup de pied renversé");
     m_attaques.push_back("Arme Canon laser");
 }
 Commando::~Commando() {
 
 }
 Attaque Commando::attaqueCoupDePiedRenverse(Personnage &cible) {
-    Attaque attaque("Coup de pied renvers\x82", lancerDe(2, 6), 0, 90);
+    Attaque attaque("Coup de pied renversé", lancerDe(2, 6), 0, 90);
     if(attaque.isSuccessfulAttaque()){
         cible.recevoirDegats(attaque.getDegats());
     }
@@ -35,7 +35,7 @@ Attaque Commando::attaqueCanonLaser(Personnage &cible) {
     return attaque;
 }
 Attaque Commando::doAttack(std::string attaque, Personnage &cible) {
-    if(attaque == "Attaque Coup de pied renvers\x82"){
+    if(attaque == "Attaque Coup de pied renversé"){
         return attaqueCoupDePiedRenverse(cible);
     }else if(attaque =="Arme Canon laser"){
         return attaqueCanonLaser(cible);

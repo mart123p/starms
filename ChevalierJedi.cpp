@@ -8,7 +8,7 @@ ChevalierJedi::ChevalierJedi() : Personnage() {
     m_nom = "Jean-Pierre";
 
     m_attaques.push_back("Sort projection");
-    m_attaques.push_back("Sort gu\x82rison");
+    m_attaques.push_back("Sort guérison");
     m_attaques.push_back("Arme sabre laser");
 
 }
@@ -19,7 +19,7 @@ ChevalierJedi::ChevalierJedi(std::string nom) : Personnage(nom) {
     m_force = m_forceMax;
 
     m_attaques.push_back("Sort projection");
-    m_attaques.push_back("Sort gu\x82rison");
+    m_attaques.push_back("Sort guérison");
     m_attaques.push_back("Arme sabre laser");
 
 }
@@ -30,7 +30,7 @@ ChevalierJedi::~ChevalierJedi() {
 Attaque ChevalierJedi::doAttack(std::string attaque, Personnage &cible) {
     if(attaque == "Sort projection"){
         return sortProjection(cible);
-    }else if(attaque =="Sort gu\x82rison"){
+    }else if(attaque =="Sort guérison"){
         return sortGuerison();
     }else if(attaque == "Arme sabre laser"){
         return attaqueSabreLaser(cible);
@@ -49,7 +49,7 @@ Attaque ChevalierJedi::sortProjection(Personnage &cible) {
 
 }
 Attaque ChevalierJedi::sortGuerison() {
-    Attaque attaque("Sort Gu\x82rison",0,lancerDe(1,8),90);
+    Attaque attaque("Sort Guérison",0,lancerDe(1,8),90);
     if(attaque.isSuccessfulAttaque()){
         m_vie =+ lancerDe(1,10);
         if(m_vie > m_vieMax){
