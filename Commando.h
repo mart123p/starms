@@ -13,6 +13,14 @@ public:
     Commando();
     /* Destructeur */
     ~Commando();
+
+    /*
+     * Entrée: string le nom de l'attaque, le personnage à attaquer
+     * Sortie: Retourne un objet attaque
+     * Rôle: Exécuter les méthodes attaques des childs de personnages.
+     */
+    virtual Attaque doAttack(std::string attaque, Personnage &cible);
+
 private:
     /*
      * Entrée: Personnage que nous voulons attaquer

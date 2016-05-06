@@ -34,3 +34,12 @@ Attaque Commando::attaqueCanonLaser(Personnage &cible) {
     }
     return attaque;
 }
+Attaque Commando::doAttack(std::string attaque, Personnage &cible) {
+    if(attaque == "Attaque Coup de pied renvers\x82"){
+        return attaqueCoupDePiedRenverse(cible);
+    }else if(attaque =="Arme Canon laser"){
+        return attaqueCanonLaser(cible);
+    }else{
+        return Attaque();
+    }
+}
