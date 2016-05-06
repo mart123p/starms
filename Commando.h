@@ -13,7 +13,7 @@ public:
     Commando();
     /* Destructeur */
     ~Commando();
-
+private:
     /*
      * Entrée: Personnage que nous voulons attaquer
      * Sortie: Retourne l'objet attaque qui contien tous l'information nécessaire

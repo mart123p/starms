@@ -13,7 +13,7 @@ public:
     ChevalierJedi();
     /* Destructeur */
     ~ChevalierJedi();
-
+private:
     /*
      *  Entrée: Le personnage à qui les dégats doivent être reçus
      *  Sortie: Objet Attaque qui contient tous les détails du sort projection
