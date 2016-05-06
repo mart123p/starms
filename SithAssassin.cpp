@@ -23,8 +23,16 @@ SithAssassin::~SithAssassin() {
 
 }
 Attaque SithAssassin::attaqueAveuglement(Personnage &cible) {
-
+    Attaque attaque("Aveuglement", lancerDe(2, 6), 0, 50);
+    if(attaque.isSuccessfulAttaque()){
+        cible.recevoirDegats(attaque.getDegats());
+    }
+    return attaque;
 }
 Attaque SithAssassin::attaqueSabreLaserDouble(Personnage &cible) {
-
+    Attaque attaque("Sabre Laser Double", lancerDe(3, 4), 0, 50);
+    if(attaque.isSuccessfulAttaque()){
+        cible.recevoirDegats(attaque.getDegats());
+    }
+    return attaque;
 }
