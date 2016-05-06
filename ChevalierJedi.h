@@ -13,6 +13,9 @@ public:
     ChevalierJedi();
     /* Destructeur */
     ~ChevalierJedi();
+
+    virtual Attaque doAttack(std::string attaque, Personnage &cible);
+
 private:
     /*
      *  Entrée: Le personnage à qui les dégats doivent être reçus

@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Attaque.h"
 
-Attaque::Attaque() {
+Attaque::Attaque(): m_nom("pas de nom"), m_degats(0), m_coutsDeForce(0), m_pourcentageReussite(0), m_succes(false) {
 
 }
 Attaque::Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageReussite) :

@@ -26,6 +26,19 @@ ChevalierJedi::ChevalierJedi(std::string nom) : Personnage(nom) {
 ChevalierJedi::~ChevalierJedi() {
 
 }
+
+Attaque ChevalierJedi::doAttack(std::string attaque, Personnage &cible) {
+    if(attaque == "Sort projection"){
+        return sortProjection(cible);
+    }else if(attaque =="Sort gu\x82rison"){
+        return sortGuerison();
+    }else if(attaque == "Arme sabre laser"){
+        return attaqueSabreLaser(cible);
+    }else{
+        return Attaque();
+    }
+}
+
 Attaque ChevalierJedi::sortProjection(Personnage &cible) {
     Attaque attaque("Sort Projection",lancerDe(2,8),lancerDe(1,10),80);
     if(attaque.isSuccessfulAttaque()){
