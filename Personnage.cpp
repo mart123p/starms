@@ -36,6 +36,8 @@ int Personnage::lancerDe(int nbDe, int nbFace) {
 }
 void Personnage::recevoirDegats(int degats) {
     m_vie -= degats;
+	if(m_vie < 0)
+		m_vie = 0;
 }
 int Personnage::getVie() const {
     return m_vie;
@@ -51,4 +53,8 @@ int Personnage::getForceMax() const {
 }
 std::string Personnage::getNom() const{
     return m_nom;
+}
+
+bool Personnage::isAlive() const{
+	return (m_vie > 0);
 }

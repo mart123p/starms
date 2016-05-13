@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include "Attaque.h"
+#include "display.h"
 
 class Personnage {
 public:
@@ -36,6 +37,13 @@ public:
      * Rôle: Permet à chaque personnage de reçevoir des dégats
     */
     void recevoirDegats(int degats);
+
+	 /*
+     * Entrée: Aucune
+     * Sortie: boolean si le personnage est vivant
+     * Rôle: Determiner si le personnage est vivant
+    */
+	bool isAlive() const;
 
     /*
      * Entrée: Aucune
@@ -77,7 +85,21 @@ public:
      * Sortie: Retourne un objet attaque
      * Rôle: Exécuter les méthodes attaques des childs de personnages.
      */
-    virtual Attaque doAttack(std::string attaque, Personnage &cible) = 0;
+    virtual Attaque doAttack(std::string attaque, Personnage* cible) = 0;
+
+	/*
+	 * Entrée: null
+	 * Sortie: Retourne un string du nom du type de personnage
+	 * Rôle: Retourner un type
+	 */
+	virtual std::string getType() const = 0;
+
+	/*
+	 * Entrée: gauche ou droite de l'ecran
+	 * Sortie: void
+	 * Rôle: Dessine les personnages de la mini bibliotheque display.h
+	 */
+	virtual void drawPersonnage(int slot) const = 0;
 
 protected:
     int m_vieMax;

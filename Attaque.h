@@ -9,7 +9,7 @@ public:
     /* Constructeur */
     Attaque();
     /* Constructeur avec le nom de l'attaque, le nombre dégats, le couts en force, pourcentage de réussite pour l'attaque*/
-    Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageReussite);
+    Attaque(std::string nom, int degats, int coutsDeForce, int pourcentageReussite, int forceActuelle);
     /* Destructeur */
     ~Attaque();
     /*
@@ -39,11 +39,27 @@ public:
      * Rôle: Sera utile pour le choix des attaques
      */
     std::string getNom() const;
+	
+   /*
+     * Entrée: la guerison en int
+     * Sortie: void
+     * Rôle: Setter pour guerison
+     */	
+	void setGuerison(int guerison);
+
+   /*
+     * Entrée: Aucune
+     * Sortie: int de la valeur de la guerison
+     * Rôle: Getter guerison
+     */
+	int getGuerison() const;
 
 private:
     int m_degats;
     int m_coutsDeForce;
     int m_pourcentageReussite;
+	int m_guerison;
+	int m_forceActuelle;
     std::string m_nom;
     bool m_succes;
 };
